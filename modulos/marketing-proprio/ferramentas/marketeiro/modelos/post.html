@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- Modelo de post único (1 tela de 1080x1350). Copie para a pasta da peça como post.html e escreva o conteudo.json ao lado
+     (só a primeira tela de "slides" é usada; exemplo: modelos/conteudo.exemplo.json).
+     PNG: node ferramentas/marketeiro/render.cjs --pagina <peca>/post.html --png   (sai slide-01.png)
+     Ponto de partida: pode trocar o tipo da tela ou criar livre por cima, mantendo a marca. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Post</title>
+<link rel="stylesheet" href="/ferramentas/marketeiro/blocos/blocos.css">
+<link rel="stylesheet" href="/ferramentas/marketeiro/blocos/pecas.css">
+<link rel="stylesheet" href="/marketing/marca/tema.css">
+<script src="/ferramentas/marketeiro/blocos/blocos.js"></script>
+<script src="/ferramentas/marketeiro/blocos/pecas.js"></script>
+</head>
+<body class="pc-corpo">
+<div id="pecas" style="display:contents"></div>
+<script>
+window.PRONTO = (async () => {
+  const conteudo = await Blocos.carregarJSON('conteudo.json');
+  await Pecas.montar(conteudo, { max: 1 });
+})().catch(Blocos.mostrarErro);
+</script>
+</body>
+</html>

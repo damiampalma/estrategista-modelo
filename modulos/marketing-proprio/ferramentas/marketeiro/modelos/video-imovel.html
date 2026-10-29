@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- Modelo do vídeo de imóvel (Reels 1080x1920). Copie para a pasta da peça como video.html e escreva o roteiro.json ao lado.
+     Lê: roteiro.json (cenas) · trabalho/palavras.json (fala com tempo) · trabalho/meta.json e trabalho/pessoa/ (quadros da corretora).
+     Ver no navegador: node ferramentas/marketeiro/render.cjs --pagina <peca>/video.html --servir  (acrescente ?t=5 no endereço).
+     Pode criar livre por cima: depois do montarDeRoteiro, use filme.adicionar('html', {...}) ou registre um bloco novo (ver BLOCOS.md). -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Vídeo do imóvel</title>
+<link rel="stylesheet" href="/ferramentas/marketeiro/blocos/blocos.css">
+<link rel="stylesheet" href="/marketing/marca/tema.css">
+<script src="/ferramentas/marketeiro/blocos/blocos.js"></script>
+</head>
+<body>
+<div id="palco"></div>
+<script>
+window.PRONTO = (async () => {
+  const roteiro = await Blocos.carregarJSON('roteiro.json');
+  const filme = await Blocos.montarDeRoteiro(roteiro);
+  // espaço para criação livre: filme.adicionar('html', { inicio: 3, fim: 6, x: 60, y: 500, html: '<div class="mk-rotulo">...</div>' });
+  await Blocos.publicar(filme);
+})().catch(Blocos.mostrarErro);
+</script>
+</body>
+</html>

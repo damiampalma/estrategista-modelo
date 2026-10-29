@@ -1,0 +1,124 @@
+{
+  "_leia": "Kit de marca dela. Preencha na ativação (bloco E do módulo marketing-proprio) com o que ela JÁ TEM: cores e fontes dos templates do Canva, site, Instagram. Marque o que é inferência. Depois rode: node ferramentas/marketeiro/tema.cjs. Cores em #RRGGBB. Sem telefone, e-mail, senha ou dado pessoal. status fica \"proposta\" até ela confirmar. O tema abaixo é só um ponto de partida neutro: troque pelo dela.",
+  "cliente": "[Nome dela · nome do negócio]",
+  "titulo": "[Nome do *negócio*]",
+  "resumo": "[Uma frase: o que ela faz, para quem, onde. Fonte: site, Instagram ou a ativação, com data.]",
+  "versao": "1.0",
+  "atualizado_em": "",
+  "status": "proposta",
+  "confirmado_em": null,
+  "tema": {
+    "fundo": "#14110F",
+    "superficie": "#201B18",
+    "texto": "#F4EFE8",
+    "suave": "#BDB3A8",
+    "linha": "#3A322D",
+    "destaque": "#E0A458",
+    "apoio": "#B9803A",
+    "no": "#E5604D"
+  },
+  "conceito": {
+    "intro": "[De onde veio o conceito e quem aprovou.]",
+    "frase": "[Uma frase que resume o jeito de criar, com uma *palavra* de destaque.]",
+    "principios": [
+      "[Princípio 1: o que sempre se faz]",
+      "[Princípio 2]",
+      "[Princípio 3]"
+    ]
+  },
+  "essencia": {
+    "intro": "[Fonte: site, materiais, conversa. Marque o que for inferência.]",
+    "palavras": [
+      { "palavra": "[Palavra 1]", "texto": "[O que ela significa na prática]" },
+      { "palavra": "[Palavra 2]", "texto": "[...]" },
+      { "palavra": "[Palavra 3]", "texto": "[...]" }
+    ],
+    "posicionamento": "[Uma frase: quem é, para quem, o que entrega.]"
+  },
+  "logo": {
+    "intro": "[Descrição curta da logo, se houver.]",
+    "versoes": [],
+    "regras": [
+      "[Fundo recomendado]",
+      "[Respiro mínimo]"
+    ],
+    "nao_fazer": [
+      "Esticar, girar ou trocar as cores.",
+      "Acrescentar sombra ou brilho extra.",
+      "Redesenhar ou recriar a logo com IA."
+    ]
+  },
+  "cores_intro": "[De onde vieram as cores: site, materiais, medição.]",
+  "cores": [],
+  "tipografia_intro": "[Licença das fontes e onde estão os arquivos. Sem arquivo, o motor usa Cormorant Garamond e Inter (OFL).]",
+  "fontes": [],
+  "destaque_regra": {
+    "titulo": "A palavra de destaque vai inteira",
+    "texto": "Dois estilos na mesma frase são bem-vindos, mas a palavra de destaque nunca é dividida em duas fontes.",
+    "certo": [ "[Frase com uma *palavra* inteira em destaque.]" ],
+    "errado": [ "Pa*lavra*" ]
+  },
+  "selo_texto": "[O que ela faz, em 2 ou 3 palavras]",
+  "botao_texto": "[A CHAMADA PADRÃO DELA]",
+  "faixa_palavras": [],
+  "fio_cores": [],
+  "elementos_intro": "[Pequenas peças que se repetem e identificam a marca.]",
+  "elementos": [
+    { "nome": "Selo", "demo": "selo", "descricao": "[Onde e quando aparece.]" },
+    { "nome": "Botão de chamada", "demo": "botao", "descricao": "[O que a chamada principal pede.]" }
+  ],
+  "voz": {
+    "intro": "[Três adjetivos e uma regra de frase.]",
+    "faz": [ "[O que a voz faz]" ],
+    "nao_faz": [
+      "Não usa escassez inventada.",
+      "Não promete resultado, prazo ou preço.",
+      "Não cita lei, regra ou número sem fonte.",
+      "Não usa travessão longo nem \"a gente\"."
+    ],
+    "exemplos": [
+      { "contexto": "[Onde foi usado]", "texto": "[Frase aprovada com *destaque*.]" }
+    ],
+    "chamada_padrao": "[Ex.: Fale comigo: o link está na bio.]"
+  },
+  "imagem": {
+    "intro": "[Estilo de foto e vídeo.]",
+    "faz": [ "[O que fazer]" ],
+    "evitar": [ "[O que evitar]" ],
+    "origem_material": "[Material real x gerado por IA; o que depende de autorização.]"
+  },
+  "movimento": {
+    "intro": "[Como as peças se movem e soam.]",
+    "principios": [ "[Ritmo, transições, texto na tela]" ],
+    "som": [ "[Trilha, efeitos, volume]" ],
+    "formatos": [
+      { "nome": "Reels e Story", "medida": "1080×1920 · 30 fps", "nota": "Texto fora do topo de 220 px e da base de 380 px (interface do Instagram)." },
+      { "nome": "Feed", "medida": "1080×1350", "nota": "" }
+    ]
+  },
+  "pecas_intro": "[Peças aprovadas que servem de modelo.]",
+  "pecas": [],
+  "checklist": [
+    "A palavra de destaque está inteira?",
+    "Todo número tem fonte e foi confirmado por ela?",
+    "O final diz o que fazer?",
+    "Sem escassez e sem promessa que ela não confirmou?",
+    "Foto ou vídeo é real ou, se for de IA, foi aprovado e leva o rótulo?",
+    "Nome de cliente, telefone e dado pessoal não aparecem?",
+    "Aprovado por ela?"
+  ],
+  "regras_de_uso": [
+    "Este kit vale para toda peça dela.",
+    "Mudança no kit só com o \"sim\" dela; versão e data ficam registradas."
+  ],
+  "pendencias_cliente": [
+    "Trazer cores e fontes dos templates do Canva (bloco E).",
+    "Confirmar a logo, se houver."
+  ],
+  "corretor": {
+    "_nota": "O motor lê esta chave para a assinatura das peças (nome, arroba, negócio). O nome da chave é herdado do motor; serve para qualquer profissão.",
+    "nome": "[Nome dela como aparece nas peças]",
+    "arroba": "[@perfil]",
+    "imobiliaria": "[Nome do negócio]"
+  }
+}

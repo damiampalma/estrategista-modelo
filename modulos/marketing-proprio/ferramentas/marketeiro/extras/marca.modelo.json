@@ -1,0 +1,94 @@
+{
+  "_leia": "Modelo do kit de marca. Copie para dados/marca.json, preencha com o que o cliente JÁ TEM (site, materiais, perfil) e marque o que é inferência. Depois: python scripts/agencia.py kit --root . Texto: *palavra* vira destaque na cor da marca, **negrito**. Cores em #RRGGBB. Arquivos (logo, fonte .ttf, imagens) ficam dentro desta pasta, caminhos relativos. Não coloque telefone, e-mail, senha nem dado pessoal. status continua \"proposta\" até o cliente confirmar.",
+  "cliente": "[NOME DO CLIENTE]",
+  "titulo": "[NOME] *marca*",
+  "resumo": "[O que o cliente faz, onde, desde quando (com fonte). Uma ou duas frases.]",
+  "versao": "1.0",
+  "atualizado_em": "AAAA-MM-DD",
+  "status": "proposta",
+  "confirmado_em": null,
+  "tema": {
+    "fundo": "#14110F",
+    "superficie": "#201B18",
+    "texto": "#F4EFE8",
+    "suave": "#BDB3A8",
+    "linha": "#3A322D",
+    "destaque": "#E0A458",
+    "apoio": "#B9803A",
+    "no": "#E5604D"
+  },
+  "conceito": {
+    "intro": "[De onde veio o conceito e quem aprovou.]",
+    "frase": "[Uma frase que resume o jeito de criar, com uma *palavra* de destaque.]",
+    "principios": ["[Princípio 1: o que sempre se faz]", "[Princípio 2]", "[Princípio 3]"]
+  },
+  "essencia": {
+    "intro": "[Fonte: site, materiais, conversa. Marque o que for inferência.]",
+    "palavras": [
+      {"palavra": "[Palavra 1]", "texto": "[O que ela significa na prática]"},
+      {"palavra": "[Palavra 2]", "texto": "[...]"},
+      {"palavra": "[Palavra 3]", "texto": "[...]"}
+    ],
+    "posicionamento": "[Uma frase: quem é, para quem, o que entrega.]"
+  },
+  "logo": {
+    "intro": "[Descrição curta da logo.]",
+    "versoes": [],
+    "regras": ["[Fundo recomendado]", "[Respiro mínimo]"],
+    "nao_fazer": ["Esticar, girar ou trocar as cores.", "Acrescentar sombra ou brilho extra.", "Redesenhar ou recriar a logo com IA."]
+  },
+  "cores_intro": "[De onde vieram as cores: site, materiais, medição.]",
+  "cores": [],
+  "tipografia_intro": "[Licença das fontes e onde estão os arquivos.]",
+  "fontes": [],
+  "destaque_regra": {
+    "titulo": "A palavra de destaque vai inteira",
+    "texto": "Dois estilos na mesma frase são bem-vindos, mas a palavra de destaque nunca é dividida em duas fontes.",
+    "certo": ["[Frase com uma *palavra* inteira em destaque.]"],
+    "errado": ["Pa*lavra*"]
+  },
+  "selo_texto": "[Selo que filtra o público errado, por exemplo: Buffet para eventos]",
+  "botao_texto": "[Chamada principal em caixa alta]",
+  "faixa_palavras": [],
+  "fio_cores": [],
+  "elementos_intro": "[Pequenas peças que se repetem e identificam a marca.]",
+  "elementos": [
+    {"nome": "Selo", "demo": "selo", "descricao": "[Onde e quando aparece e qual erro de público evita.]"},
+    {"nome": "Botão de chamada", "demo": "botao", "descricao": "[O que a chamada principal pede.]"}
+  ],
+  "voz": {
+    "intro": "[Três adjetivos e uma regra de frase.]",
+    "faz": ["[O que a voz faz]"],
+    "nao_faz": ["Não usa escassez inventada.", "Não promete número, preço ou resultado sem confirmação."],
+    "exemplos": [{"contexto": "[Onde foi usado]", "texto": "[Frase aprovada com *destaque*.]"}],
+    "chamada_padrao": "[Chamada final padrão.]"
+  },
+  "imagem": {
+    "intro": "[Estilo de foto e vídeo.]",
+    "faz": ["[O que fazer]"],
+    "evitar": ["[O que evitar]"],
+    "origem_material": "[Material real x gerado por IA; o que depende de autorização.]"
+  },
+  "movimento": {
+    "intro": "[Como as peças se movem e soam.]",
+    "principios": ["[Ritmo, transições, texto na tela]"],
+    "som": ["[Trilha, efeitos, volume]"],
+    "formatos": [
+      {"nome": "Reels e Story", "medida": "1080×1920 · 30 fps", "nota": "Texto fora do topo de 220 px e da base de 380 px (interface do Instagram)."},
+      {"nome": "Feed", "medida": "1080×1350", "nota": ""}
+    ]
+  },
+  "pecas_intro": "[Peças aprovadas que servem de modelo.]",
+  "pecas": [],
+  "checklist": [
+    "A palavra de destaque está inteira?",
+    "Todo número tem fonte e foi confirmado pelo cliente?",
+    "O final diz o que fazer?",
+    "Sem escassez e sem promessa que o cliente não confirmou?",
+    "Foto ou vídeo é real ou, se for de IA, foi aprovado e leva o rótulo?",
+    "Nome de cliente, telefone e dado pessoal não aparecem?",
+    "Aprovado pelo Damiam e, quando o contrato prevê, pelo cliente?"
+  ],
+  "regras_de_uso": ["Este kit vale para toda peça do cliente.", "Mudança no kit só com o \"sim\" do Damiam e a confirmação do cliente; versão e data ficam registradas."],
+  "pendencias_cliente": ["Confirmar logo, cores e fontes.", "Confirmar os números usados nas peças."]
+}

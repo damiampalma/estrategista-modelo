@@ -1,0 +1,26 @@
+# ESTADO (onde paramos)
+
+- Fase: ativação
+- Versão do modelo: 1.3.0 (26/10/2026) · módulos disponíveis nesta pasta: geral, corretor, advogado, marketing-proprio
+- Módulos ligados: nenhum ainda
+- Módulo pedido (profissão sem módulo): nenhum
+- Nome do Estrategista: (ela escolhe na primeira conversa; se não quiser escolher: "perguntado em (data), sem nome; não perguntar de novo")
+- Como chamar a pessoa:
+- Profissão:
+- Motor: (Claude na nuvem | Claude no computador | Codex no computador | Codex na nuvem; pode ser mais de um)
+- Caderno privado: não conferido | conferido (data, como)
+- Computador: não instalado | instruções enviadas (data) | instalado (data, sistema)
+- Importação do Claude e do ChatGPT: não feita | parcial | feita (data)
+- Régua: geral _ · A _ · B _ · C _ · D _ · E _ · F _
+- Onde paramos: sede criada, ativação ainda não começou.
+- Próximo passo (uma frase): ela escreve "oi" e a ativação começa (skill `ativacao`).
+- Pendências (no máximo 3):
+  -
+- Ferramentas conectadas: nenhuma ainda (detalhe em `FERRAMENTAS.md`)
+- Rotinas aprovadas: nenhuma ainda (detalhe em `ROTINA.md`)
+- Modos ligados: nenhum ainda (a lista está em `.claude/skills/modos/MODOS.md`)
+- Modos recusados (não sugerir de novo): nenhum
+- Avisos de oportunidades da EstrategistaLabs: ainda não perguntado (detalhe em `OPORTUNIDADES.md`)
+- Início dos 30 dias de ajuste: (data em que a ativação fechou)
+- Última cópia de segurança (só quando a sede não está no GitHub): nenhuma ainda
+- Atualizado em:

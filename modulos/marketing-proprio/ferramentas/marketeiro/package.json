@@ -1,0 +1,22 @@
+{
+  "name": "marketeiro-motor",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Motor de criação do módulo Marketeiro (Agente do Corretor): post, carrossel e vídeo de imóvel renderizados no computador da corretora.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "instalar": "node instalar-motor.cjs",
+    "autoteste": "node autoteste.cjs",
+    "tema": "node tema.cjs"
+  },
+  "dependencies": {
+    "ffmpeg-static": "5.3.0",
+    "playwright-core": "1.63.0"
+  },
+  "allowScripts": {
+    "ffmpeg-static@5.3.0": true
+  }
+}

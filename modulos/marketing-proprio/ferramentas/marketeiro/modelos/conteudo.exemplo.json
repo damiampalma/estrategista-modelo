@@ -1,0 +1,16 @@
+{
+  "_leia": "Exemplo de conteudo.json para post.html (usa só a 1ª tela) e carrossel.html (até 10 telas). Copie para a pasta da peça como conteudo.json. Todo número, preço e metragem abaixo é EXEMPLO: troque pelos dados da ficha do imóvel ou apague. *palavra* = destaque (sempre a palavra inteira). **texto** = negrito. Fotos ficam na pasta da peça (caminho relativo). Tipos: capa, texto, lista, numero, foto, imovel, citacao, fecho. Opcional em qualquer tela: \"claro\": true (fundo marfim).",
+  "formato": "1080x1350",
+  "assinatura": { "arroba": "@seu.perfil" },
+  "slides": [
+    { "tipo": "capa", "rotulo": "Antes de visitar", "titulo": "O que a *planta* conta e o anúncio não", "sub": "Três detalhes que eu confiro com cada cliente." },
+    { "tipo": "texto", "numero": "01", "rotulo": "Sol", "titulo": "Para onde vira a *sala*", "texto": "Sol da manhã ou da tarde muda a casa inteira. Eu peço a orientação na planta **antes** de marcar a visita." },
+    { "tipo": "lista", "rotulo": "Checklist", "titulo": "Na planta, eu *sempre* olho", "itens": ["Onde ficam as janelas de cada quarto", "Se a cozinha tem ventilação natural", "A distância da vaga até o elevador", "Quanto da área é varanda"] },
+    { "tipo": "numero", "rotulo": "Localização", "valor": "5", "unidade": "min", "titulo": "a pé da *estação*", "texto": "Tempo medido no mapa, saindo da portaria.", "fonte": "Fonte: [de onde veio o tempo]" },
+    { "tipo": "imovel", "foto": "foto.jpg", "rotulo": "Bairro · Cidade", "nome": "Residencial *Exemplo*", "selo": "imóvel ilustrativo",
+      "ficha": [["84 m²", "privativa", "area"], ["2", "suítes", "cama"], ["2", "vagas", "carro"]], "preco": "R$ 0.000.000", "precoRotulo": "a partir de" },
+    { "tipo": "foto", "foto": "foto.jpg", "legendaFoto": "Sala · *32 m²*", "rotulo": "Por dentro", "titulo": "Luz natural o dia *inteiro*", "texto": "Uma frase curta sobre o que a foto mostra." },
+    { "tipo": "citacao", "texto": "[EXEMPLO: só com autorização do cliente] Nós sabíamos o que queríamos.", "autor": "[Cliente]" },
+    { "tipo": "fecho", "rotulo": "Visita com hora marcada", "titulo": "Quer conhecer de *perto*?", "texto": "Me chama no direct com o nome do imóvel.", "botao": "Chama no direct", "iconeBotao": "mensagem" }
+  ]
+}

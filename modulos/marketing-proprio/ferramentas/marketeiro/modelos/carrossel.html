@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- Modelo de carrossel (até 10 telas de 1080x1350). Copie para a pasta da peça como carrossel.html e escreva o conteudo.json ao lado
+     (exemplo: modelos/conteudo.exemplo.json). PNGs: node ferramentas/marketeiro/render.cjs --pagina <peca>/carrossel.html --png
+     Ponto de partida: pode criar telas novas livres por cima (qualquer <section class="slide" data-w="1080" data-h="1350">). -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel</title>
+<link rel="stylesheet" href="/ferramentas/marketeiro/blocos/blocos.css">
+<link rel="stylesheet" href="/ferramentas/marketeiro/blocos/pecas.css">
+<link rel="stylesheet" href="/marketing/marca/tema.css">
+<script src="/ferramentas/marketeiro/blocos/blocos.js"></script>
+<script src="/ferramentas/marketeiro/blocos/pecas.js"></script>
+</head>
+<body class="pc-corpo">
+<div id="pecas" style="display:contents"></div>
+<script>
+window.PRONTO = (async () => {
+  const conteudo = await Blocos.carregarJSON('conteudo.json');
+  await Pecas.montar(conteudo, { max: 10 });
+})().catch(Blocos.mostrarErro);
+</script>
+</body>
+</html>

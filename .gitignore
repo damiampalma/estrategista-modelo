@@ -1,0 +1,31 @@
+# Motor de criação (módulo marketing-proprio): dependências e arquivos gerados
+ferramentas/marketeiro/node_modules/
+ferramentas/marketeiro/whisper/
+ferramentas/marketeiro/config.json
+modulos/marketing-proprio/ferramentas/marketeiro/node_modules/
+modulos/marketing-proprio/ferramentas/marketeiro/whisper/
+modulos/marketing-proprio/ferramentas/marketeiro/config.json
+marketing/pecas/**/trabalho/
+marketing/pecas/**/stills/
+node_modules/
+
+# Vídeo e áudio pesados ficam fora; só a versão de celular sobe
+*.mp4
+!*-celular.mp4
+*.mov
+*.wav
+*.m4a
+
+# Segredos nunca entram aqui
+.env
+.env.*
+*.key
+*.pem
+
+# O que ela marcar como privado demais para o GitHub
+_privado/
+**/_privado/
+
+# Sistema
+.DS_Store
+Thumbs.db

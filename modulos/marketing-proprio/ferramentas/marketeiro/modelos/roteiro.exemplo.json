@@ -1,0 +1,48 @@
+{
+  "_leia": "Exemplo de roteiro.json para video-imovel.html (copie para a pasta da peça como roteiro.json). Tempos em segundos OU presos a uma palavra da fala: \"@dezoito\" (início da palavra), \"@dezoito#2\" (2ª vez que aparece), \"@setenta e dois\" (sequência), \"@dezoito+0.3\" (deslocamento), \"fim:dezoito\" (fim da palavra). As palavras vêm de trabalho/palavras.json. Todo número e nome abaixo é EXEMPLO: use só o que está na ficha do imóvel ou o que a corretora falou. Imagem montada ou 3D leva \"imóvel ilustrativo\". Lista completa de blocos e parâmetros: ferramentas/marketeiro/blocos/BLOCOS.md.",
+  "pessoa": {
+    "foco": [0.5, 0.4],
+    "modos": [{ "t": 0, "modo": "cheia" }, { "t": 1.5, "modo": "cartao" }]
+  },
+  "legenda": {
+    "correcoes": { "erre jota": "RJ", "ia": "IA" },
+    "maxPalavras": 3
+  },
+  "cenas": [
+    { "bloco": "fundo", "estilo": "liso", "inicio": 0, "fim": 40 },
+    { "bloco": "fundo", "estilo": "cidade", "inicio": 0, "fim": 9.7 },
+
+    { "bloco": "titulo", "inicio": 1.5, "fim": 4, "icone": "predio", "rotulo": "Residencial", "titulo": "Exemplo", "sub": "Bairro · Cidade" },
+    { "bloco": "cabecalho", "inicio": 4, "fim": 20, "rotulo": "Residencial", "titulo": "Exemplo", "selo": "imóvel ilustrativo",
+      "direita": { "valor": "84", "unidade": "m²", "inicio": 17, "fim": 20 } },
+
+    { "bloco": "predio", "inicio": 4, "fim": 9, "andares": 18, "marcos": [{ "t": 4.2, "andar": 3 }, { "t": 5.6, "andar": 12 }, { "t": 6.6, "andar": 18 }] },
+    { "bloco": "numero", "inicio": 4, "fim": 9, "casas": 2, "rotulo": "Andares", "local": "Bairro, Cidade", "localEm": 7.5,
+      "marcos": [{ "t": 4.2, "valor": 3 }, { "t": 5.6, "valor": 12 }, { "t": 6.6, "valor": 18 }] },
+
+    { "bloco": "mapa", "inicio": 9, "fim": 13, "rotaEm": [10, 12],
+      "ruas": [{ "nome": "Av. Principal", "eixo": "h", "em": 2 }, { "nome": "R. Transversal", "eixo": "v", "em": 4 }],
+      "pin": [1.5, 1.5], "destino": { "em": [4, 3.5], "nome": "Metrô", "icone": "metro" },
+      "tempo": { "valor": 4, "unidade": "min", "rotulo": "A pé do metrô", "icone": "pe" } },
+
+    { "bloco": "numero", "inicio": 13, "fim": 17, "valor": 84, "unidade": "m²", "rotulo": "Por dentro" },
+    { "bloco": "planta", "inicio": 13.2, "fim": 20, "imagem": "planta.png", "linha": [13.3, 14.7], "cor": [14.5, 15.5], "ergue": [14.9, 16.3],
+      "poses": [{ "t": 17, "x": 540, "y": 690, "largura": 800 }],
+      "etiquetas": [
+        { "nome": "Suíte 1", "area": "14 m²", "x": 0.7, "y": 0.75, "inicio": 17.6 },
+        { "nome": "Varanda gourmet", "x": 0.3, "y": 0.85, "inicio": 18.4 }
+      ] },
+
+    { "bloco": "faixa", "inicio": 20, "fim": 24, "y": 250, "itens": ["2 suítes", "varanda gourmet", "2 vagas"] },
+    { "bloco": "galeria", "inicio": 20, "fim": 24, "area": { "x": 60, "y": 360, "w": 960, "h": 520 },
+      "fotos": [{ "arquivo": "fotos/sala.jpg", "legenda": "Sala · *32 m²*" }, { "arquivo": "fotos/varanda.jpg", "legenda": "Varanda" }] },
+
+    { "bloco": "cabecalho", "inicio": 24, "fim": 30, "rotulo": "Residencial", "titulo": "Exemplo" },
+    { "bloco": "preco", "inicio": 24, "fim": 30, "valor": 1070000, "rotulo": "A partir de", "nota": "condições com a corretora", "x": 500, "y": 630 },
+    { "bloco": "etiqueta", "inicio": 25.5, "fim": 30, "x": 300, "y": 810, "icone": "cama", "nome": "2 suítes" },
+    { "bloco": "etiqueta", "inicio": 26, "fim": 30, "x": 760, "y": 810, "icone": "carro", "nome": "2 vagas" },
+
+    { "bloco": "fecho", "inicio": 30, "fim": 40, "y": 380, "rotulo": "Visita com hora marcada", "chamada": "Quer conhecer de *perto*?",
+      "botao": "Chama no direct", "iconeBotao": "mensagem", "arroba": "@seu.perfil", "nome": "Seu Nome", "imobiliaria": "Imobiliária" }
+  ]
+}
